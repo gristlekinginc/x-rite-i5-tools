@@ -1,0 +1,21 @@
+// Cloudflare Worker + D1 for Color i5 reading uploads (see README.md).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "i5-cloud",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-10",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "i5-readings",
+      // paste the id printed by `npx wrangler d1 create i5-readings`:
+      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+    }
+  ]
+  // The API token is a secret, NOT config: npx wrangler secret put API_TOKEN
+}

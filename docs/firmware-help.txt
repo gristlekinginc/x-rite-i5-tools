@@ -1,0 +1,63 @@
+Color i5: V2.23.00 Released On 5-Jun-2007 09:58:38
+Copyright (C) 1999-2003 GretagMacbeth
+
+
+
+?                                               //displays this message
+help          command                           //displays this message, or use
+                                                //help "command-name" to
+                                                //display more help for a
+                                                //specific command
+blackcal                                        //perform black (open port)
+                                                //calibration
+button        -button[index] -notify            //set button parameters
+comm_sequence                                   //Returns a count of received
+                                                //commands.  This could be used
+                                                //by communication channel to
+                                                //detect power cycles or to
+                                                //detect channel switches.
+config        (multiple parameters)             //set measurement configuration
+disablebinary                                   //disables output of CCD data
+                                                //in binary
+enablebinary                                    //enables output of CCD data in
+                                                //binary
+errors                                          //show error counts
+fmeasure      (multiple parameters)             //initiates a measurement and
+                                                //displays results using
+                                                //formatted response.
+led           -led[index] -state                //set front panel LED
+                                                //parameters
+measure       (multiple parameters)             //initiates a measurement
+models                                          //list model transforms
+netprofiler   (multiple parameters)             //manages the operation of
+                                                //Embedded NetProfiler
+preview       -state                            //set video preview
+                                                //configuration
+r                                               //displays the unit's serial
+                                                //number
+recall        signature_version mode wavelength //resend previous measurement
+                                                //data
+setwref                                         //sets the most recently
+                                                //measured standard as the new
+                                                //white reference standard
+setclock      date time                         //sets the real-time clock
+status                                          //respond with status string
+trigger       (multiple parameters)             //initiates a measurement
+                                                //triggered by a key press and
+                                                //displays results using
+                                                //unformatted response.
+usage         -clear                            //view or reset usage counters
+uvrecall      -mem                              //print uv filter position
+                                                //stored in specified memory
+uvseek        -mem -abs -offset                 //move uv filter to specified
+                                                //position
+uvstore       -mem                              //store uv filter position in
+                                                //specified memory
+whitecal                                        //perform white calibration
+zoomrecall    -mem                              //print zoom lens position
+                                                //stored in specified memory
+zoomseek      -mem -abs -offset                 //move zoom lens to specified
+                                                //position
+zoomstore     -mem                              //store zoom lens position in
+                                                //specified memory
+

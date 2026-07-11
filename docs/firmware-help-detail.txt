@@ -1,0 +1,224 @@
+===== help "blackcal" =====
+blackcal crc //perform black (open port) calibration
+
+crc=0x7e17cdcc
+
+===== help "button" =====
+button -button[index] -notify crc //set button parameters
+
+-button[index]=????????,...
+-notify=off
+crc=0x64961274
+
+===== help "comm_sequence" =====
+comm_sequence crc //Returns a count of received commands.  This could be used
+                  //by communication channel to detect power cycles or to
+                  //detect channel switches.
+
+crc=0x1f6b4d30
+
+===== help "config" =====
+config (multiple parameters) //set measurement configuration
+
+-mode=sce
+-zoom=auto
+-uv=d65
+-model="Color i5 (base)"
+-wlen=10
+-flash=4
+-flashmode=min
+-aperture=auto
+-led=auto
+-crc_on=false
+-sequence_on=false
+-show_values 
+crc=0x353d6b94
+
+===== help "disablebinary" =====
+disablebinary crc //disables output of CCD data in binary
+
+crc=0xfa886b7a
+
+===== help "enablebinary" =====
+enablebinary crc //enables output of CCD data in binary
+
+crc=0x81257537
+
+===== help "errors" =====
+errors crc //show error counts
+
+crc=0x99df465
+
+===== help "fmeasure" =====
+fmeasure (multiple parameters) //initiates a measurement and displays results
+                               //using formatted response.
+
+trigger_key[key_num]=????????
+status[mode]=1111070000300m03
+data[mode][wavelength]=?????,...
+datasum[mode]=?????
+gloss=?????
+measurement_date= 9-Jul-2026
+measurement_time=11:39:48
+signature=V4S3N05i5XXXXA6a4f8884M3baseW0a2ee168X38
+signature_version=4
+flashes=4
+mode=???
+wavelength=???
+crc=0x5d49c646
+
+===== help "led" =====
+led -led[index] -state crc //set front panel LED parameters
+
+-led[index]=???????????????,...
+-state=off
+crc=0xcfe8d544
+
+===== help "measure" =====
+measure (multiple parameters) //initiates a measurement
+
+trigger_key[key_num]=????????
+status[mode]=1111070000300m03
+data[mode][wavelength]=?????,...
+datasum[mode]=?????
+gloss=?????
+measurement_date= 9-Jul-2026
+measurement_time=11:39:48
+signature=V4S3N05i5XXXXA6a4f8884M3baseW0a2ee168X38
+signature_version=4
+flashes=4
+mode=???
+wavelength=???
+crc=0xe622205f
+
+===== help "models" =====
+models crc //list model transforms
+
+-version 
+crc=0x17da3f0
+
+===== help "netprofiler" =====
+netprofiler (multiple parameters) //manages the operation of Embedded
+                                  //NetProfiler
+
+status=disable
+loaded=true
+active=false
+expires_on= 4-Aug-2022
+tag=
+created_on=30-Jun-2022
+signature=V4S3N05i5XXXXA6a4f8884M3baseW0a2ee168X38
+version=V2.05.00.050:27
+signature_version=4
+crc=0xda4bc7fb
+
+===== help "preview" =====
+preview -state crc //set video preview configuration
+
+-state=off
+crc=0x7ff6b848
+
+===== help "recall" =====
+recall (multiple parameters) //resend previous measurement data
+
+status[mode]=1111070000300m03
+data[mode][wavelength]=?????,...
+datasum[mode]=?????
+gloss=?????
+measurement_date= 9-Jul-2026
+measurement_time=11:39:48
+signature=V4S3N05i5XXXXA6a4f8884M3baseW0a2ee168X38
+signature_version=4
+flashes=4
+mode=???
+wavelength=???
+crc=0xb9839a00
+
+===== help "setwref" =====
+setwref crc //sets the most recently measured standard as the new white
+            //reference standard
+
+crc=0xd5a6d2d0
+
+===== help "setclock" =====
+setclock date time crc //sets the real-time clock
+
+date= 9-Jul-2026
+time=11:48:12
+continuous 
+crc=0xc14487c2
+
+===== help "status" =====
+status crc //respond with status string
+
+crc=0x216aa7a1
+
+===== help "trigger" =====
+trigger (multiple parameters) //initiates a measurement triggered by a key
+                              //press and displays results using unformatted
+                              //response.
+
+trigger_key[key_num]=????????
+status[mode]=1111070000300m03
+data[mode][wavelength]=?????,...
+datasum[mode]=?????
+gloss=?????
+measurement_date= 9-Jul-2026
+measurement_time=11:39:48
+signature=V4S3N05i5XXXXA6a4f8884M3baseW0a2ee168X38
+signature_version=4
+flashes=4
+mode=???
+wavelength=???
+crc=0xc4b7fdd5
+
+===== help "usage" =====
+usage -clear crc //view or reset usage counters
+
+-clear=none
+crc=0xbacd725f
+
+===== help "uvrecall" =====
+uvrecall -mem crc //print uv filter position stored in specified memory
+
+-mem=d65
+crc=0xe7334cbf
+
+===== help "uvseek" =====
+uvseek -mem -abs -offset crc //move uv filter to specified position
+
+-mem=d65
+-abs=0
+-offset=0
+crc=0xd2ab6b3
+
+===== help "uvstore" =====
+uvstore -mem crc //store uv filter position in specified memory
+
+-mem=d65
+crc=0x61eb73f6
+
+===== help "whitecal" =====
+whitecal crc //perform white calibration
+
+crc=0x4cf2458f
+
+===== help "zoomrecall" =====
+zoomrecall -mem crc //print zoom lens position stored in specified memory
+
+-mem=rlav
+crc=0xdfbf7988
+
+===== help "zoomseek" =====
+zoomseek -mem -abs -offset crc //move zoom lens to specified position
+
+-mem=rlav
+-abs=0
+-offset=0
+crc=0x6130432d
+
+===== help "zoomstore" =====
+zoomstore -mem crc //store zoom lens position in specified memory
+
+-mem=rlav
+crc=0xe2b7b005
