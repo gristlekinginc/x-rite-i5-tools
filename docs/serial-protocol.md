@@ -1,4 +1,4 @@
-# Color i5 — Serial Protocol (the Rosetta Stone)
+# Color i5 — Serial Protocol Reference
 
 **Status: DECODED 2026-07-08.** Documented by capturing the OEM software driving a Color i5 over
 RS-232 (USBPcap on the FTDI adapter's USB traffic), then confirmed live against the instrument.
