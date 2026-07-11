@@ -80,6 +80,21 @@ python app.py --load ../data/sample-readings.csv
 - The tools only send commands documented by the firmware's own `help` or observed in
   normal operation.
 
+## Acknowledgments
+
+- **Ivor Hewitt** — his reverse-engineering of the X-Rite RM200
+  ([RM200-tools](https://codeberg.org/ivor/RM200-tools)) and generous pointers were the
+  head start that got this off the ground, even though the i5 turned out to speak a much
+  friendlier protocol than its handheld cousin. He also dug up the SCA roast-color
+  documents that anchor the coffee side of this project.
+- **UC Davis Coffee Center & the Specialty Coffee Association** — roast classification uses
+  the "universal coffee color curve": Anokye-Bempah, L., Styczynski, T., Ristenpart, W. D.,
+  & Donis-González, I. R. (2025). *A Universal Color Curve for Roasted Arabica Coffee.*
+  Scientific Reports, 15, 24192. https://doi.org/10.1038/s41598-025-06601-w
+  The provisional L\*→Agtron anchor points come from the SCA's
+  *A System to Assess Coffee Value* (2024).
+- Built with substantial help from **Claude** (Anthropic); any errors are mine.
+
 ## Affiliation & provenance
 
 This project is not affiliated with, endorsed by, or supported by X-Rite, Inc.
